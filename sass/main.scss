@@ -69,10 +69,14 @@ $white: white;
     color: white;
     text-align: center;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
+    padding-bottom: 2rem;
 }
 
 .header {
     margin: 2rem 0;
+    @media (min-width: 768px) {
+        margin-bottom: 4rem;
+    }
 }
 
 .title {
@@ -80,9 +84,22 @@ $white: white;
     font-family: 'Slabo 27px', 'Arial Narrow', Arial, Helvetica, sans-serif;
     text-transform: lowercase;
     font-weight: normal;
+
+    @media (min-width: 768px) {
+        margin: 4rem auto 1.5rem;
+        font-size: 4.5rem;
+    }
 }
 
-.nav {}
+.nav {
+    margin: 2rem 0;
+
+    &-link {
+        display: inline-block;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+}
 .footer {}
 
 img {
@@ -102,9 +119,21 @@ a {
     }
 }
 
+.game-link {
+    margin-bottom: 2rem;
+
+    img {
+        margin: 1rem auto;
+        display: block;
+        border: 1px solid $white;
+    }
+}
+
 .form {
     width: 100%;
     padding: 0 1rem;
+    max-width: 800px;
+    margin: auto;
 }
 
 .label {
@@ -114,9 +143,9 @@ a {
 .input {
     background: $white;
     width: 100%;
-    margin: 0 0 1rem;
+    margin: 0 auto 1rem;
     border: none;
-    padding: 2px 3px;
+    padding: 0.5rem;
 }
 
 .button {
@@ -125,6 +154,7 @@ a {
     border-radius: 3px;
     border: none;
     margin-bottom: 1rem;
+    padding: 0.5rem;
 }
 
 
