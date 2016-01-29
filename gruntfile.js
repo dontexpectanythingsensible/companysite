@@ -85,6 +85,6 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('default', ['sass', 'postcss', 'imagemin', 'connect', 'watch']);
+    grunt.registerTask('default', ['sass', 'postcss', 'connect', 'watch']);
 
 };

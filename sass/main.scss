@@ -71,13 +71,14 @@ $white: white;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     padding-bottom: 2rem;
     margin: 0;
+    background-color: #ae81ff;
 }
 
 @import "background";
 
 .header {
     padding: 2rem 0;
-    background: rgba($white, 0.8);
+    background: rgba($white, 1);
 }
 
 .title {
@@ -135,6 +136,7 @@ a {
         margin: 1rem auto;
         display: block;
         border: 1px solid $white;
+        opacity: 0.9;
     }
 }
 
