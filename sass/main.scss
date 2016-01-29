@@ -62,11 +62,10 @@ textarea {
 @import url(https://fonts.googleapis.com/css?family=Lato|Slabo+27px);
 
 $red: rgb(245, 86, 99);
+$pink: #f92672;
 $white: white;
 
 .body {
-    background: $red;
-    box-shadow: inset 0 0 8rem 0.6rem lighten($red, 10%);
     color: white;
     text-align: center;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
@@ -74,22 +73,23 @@ $white: white;
     margin: 0;
 }
 
+@import "background";
+
 .header {
     padding: 2rem 0;
-
-    @media (min-width: 768px) {
-        padding-bottom: 4rem;
-    }
+    background: rgba($white, 0.8);
 }
 
 .title {
+    color: $pink;
     font-size: 2.2rem;
     font-family: 'Slabo 27px', 'Arial Narrow', Arial, Helvetica, sans-serif;
     text-transform: lowercase;
+    margin: auto;
     font-weight: normal;
+    line-height: 1;
 
     @media (min-width: 768px) {
-        margin: 4rem auto 1.5rem;
         font-size: 4.5rem;
     }
 }
@@ -105,20 +105,26 @@ $white: white;
 }
 .footer {}
 
+.tagline {
+    background: rgba($pink, 0.3);
+    margin-bottom: 2rem;
+}
+
 img {
     max-width: 100%;
 }
 
 p {
-    padding: 0 1rem;
+    padding: 1rem;
+    margin: 0;
 }
 
 a {
     font-weight: bold;
-    color: $white;
+    color: $pink;
 
     &:visited {
-        color: darken($white, 5%);
+        color: darken($pink, 5%);
     }
 }
 
@@ -132,11 +138,16 @@ a {
     }
 }
 
+.mc-field-group {
+    display: flex;
+}
+
 .form {
     width: 100%;
     padding: 0 1rem;
     max-width: 800px;
     margin: auto;
+    color: #444;
 }
 
 .label {
@@ -149,17 +160,17 @@ a {
     margin: 0 auto 1rem;
     border: none;
     padding: 0.5rem;
+    border-radius: 3px 0 0 3px;
 }
 
 .button {
-    background: $white;
-    color: $red;
-    border-radius: 3px;
+    background: $pink;
+    color: $white;
+    border-radius: 0 3px 3px 0;
     border: none;
     margin-bottom: 1rem;
     padding: 0.5rem;
 }
-
 
 
 

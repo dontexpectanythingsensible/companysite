@@ -30,7 +30,7 @@ module.exports = function(grunt) {
                 files: [
                     '<%= app %>/sass/**/*'
                 ],
-                tasks: ['sass']
+                tasks: ['sass', 'postcss']
             },
 
             js: {
@@ -38,6 +38,20 @@ module.exports = function(grunt) {
                     '<%= app %>/src/**/*.*'
                 ],
                 tasks: ['eslint']
+            }
+        },
+
+        postcss: {
+            options: {
+                map: false,
+                processors: [
+                    require('autoprefixer')({
+                        browsers: ['last 2 versions']
+                    })
+                ]
+            },
+            dist: {
+                src: 'css/*.css'
             }
         },
 
@@ -55,6 +69,6 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('default', ['sass', 'connect', 'watch']);
+    grunt.registerTask('default', ['sass', 'postcss', 'connect', 'watch']);
 
 };

@@ -1,0 +1,12 @@
+$backgrounds: 28;
+
+body {
+    background-position: center center;
+    background-size: cover;
+}
+
+@for $i from 1 through $backgrounds {
+    .body-#{$i} {
+        background-image: url('/img/backgrounds/desktop/bg-#{$i}.jpg');
+    }
+}
