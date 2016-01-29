@@ -7,6 +7,10 @@ body {
 
 @for $i from 1 through $backgrounds {
     .body-#{$i} {
-        background-image: url('/img/backgrounds/desktop/bg-#{$i}.jpg');
+        background-image: url('/img/backgrounds/mobile/bg-#{$i}.jpg');
+
+        @media (min-width: 800px) {
+            background-image: url('/img/backgrounds/desktop/bg-#{$i}.jpg');
+        }
     }
 }

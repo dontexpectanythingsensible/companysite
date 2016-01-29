@@ -41,6 +41,22 @@ module.exports = function(grunt) {
             }
         },
 
+        imagemin: {
+            options: {                       // Target options
+                optimizationLevel: 6,
+                progressive: true
+            },
+
+            dynamic: {                         // Another target
+                files: [{
+                    expand: true,                  // Enable dynamic expansion
+                    cwd: 'img/',                   // Src matches are relative to this path
+                    src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
+                    dest: 'img/'                  // Destination path prefix
+                }]
+            }
+        },
+
         postcss: {
             options: {
                 map: false,
@@ -69,6 +85,6 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('default', ['sass', 'postcss', 'connect', 'watch']);
+    grunt.registerTask('default', ['sass', 'postcss', 'imagemin', 'connect', 'watch']);
 
 };
