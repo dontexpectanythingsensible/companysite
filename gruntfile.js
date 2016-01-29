@@ -30,14 +30,14 @@ module.exports = function(grunt) {
                 files: [
                     '<%= app %>/sass/**/*'
                 ],
-                tasks: ['sass', 'postcss']
+                tasks: ['sass', 'postcss', 'asset_cachebuster']
             },
 
             js: {
                 files: [
                     '<%= app %>/src/**/*.*'
                 ],
-                tasks: ['eslint']
+                tasks: ['eslint', 'asset_cachebuster']
             }
         },
 
@@ -71,6 +71,19 @@ module.exports = function(grunt) {
             }
         },
 
+        asset_cachebuster: {
+            options: {
+                buster: Date.now()
+            },
+            build: {
+                files: {
+                    'css/main.css': ['css/main.css'],
+                    'index.html': ['index.html'],
+                    'js/main.js': ['js/main.js']
+                }
+            }
+        },
+
         connect: {
             options: {
                 port: 3000,
@@ -85,6 +98,6 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('default', ['sass', 'postcss', 'connect', 'watch']);
+    grunt.registerTask('default', ['sass', 'postcss', 'asset_cachebuster', 'connect', 'watch']);
 
 };
