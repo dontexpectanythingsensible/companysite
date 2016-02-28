@@ -102,6 +102,20 @@ $white: white;
         display: inline-block;
         margin-right: 1rem;
         margin-left: 1rem;
+        border-radius: 3px;
+        background: $pink;
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem;
+
+        &:visited {
+            color: white;
+        }
+
+        &:hover {
+            background: lighten($pink, 5%);
+            text-decoration: underline;
+        }
     }
 }
 .footer {}
