@@ -80,14 +80,15 @@ textarea {
 $red: rgb(245, 86, 99);
 $pink: #f92672;
 $white: white;
+$green: #75B54E;
 
 .body {
     color: white;
     text-align: center;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
-    padding-bottom: 2rem;
+    // padding-bottom: 2rem;
     margin: 0;
-    background-color: #ae81ff;
+    background-color: #75B54E;
 }
 
 @import "background";
@@ -95,6 +96,10 @@ $white: white;
 .header {
     padding: 2rem 0;
     background: rgba($white, 1);
+}
+
+.logo {
+    width: 30%;
 }
 
 .title {
@@ -119,7 +124,7 @@ $white: white;
         margin-right: 1rem;
         margin-left: 1rem;
         border-radius: 3px;
-        background: $pink;
+        background: $green;
         color: white;
         text-decoration: none;
         padding: 0.5rem;
@@ -129,16 +134,66 @@ $white: white;
         }
 
         &:hover {
-            background: lighten($pink, 5%);
+            background: lighten($green, 5%);
             text-decoration: underline;
         }
     }
 }
-.footer {}
+.footer {
+    background: rgba($green, 0.3);
+
+    p {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    a {
+        color: white;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    .about & {
+    //     margin-top: 2rem;
+        background: $green;
+    //     color: $green;
+
+    //     a,
+    //     a:visited {
+    //         color: $green;
+    //     }
+    }
+}
 
 .tagline {
-    background: rgba($pink, 0.3);
+    background: rgba($green, 0.3);
+}
+
+.top-nav {
+    background: rgba($white, 0.85);
+    padding: 1rem;
     margin-bottom: 2rem;
+
+    a {
+        display: inline-block;
+        margin: 0 1rem;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .about & {
+        background: $green;
+
+        a,
+        a:visited {
+            color: $white;
+        }
+    }
 }
 
 img {
@@ -152,10 +207,10 @@ p {
 
 a {
     font-weight: bold;
-    color: $pink;
+    color: $green;
 
     &:visited {
-        color: darken($pink, 5%);
+        color: darken($green, 5%);
     }
 }
 
@@ -196,7 +251,7 @@ a {
 }
 
 .button {
-    background: $pink;
+    background: $green;
     color: $white;
     border-radius: 0 3px 3px 0;
     border: none;
@@ -204,6 +259,50 @@ a {
     padding: 0.5rem;
 }
 
+.about {
+    background: $white;
+    color: #222;
+}
+
+aside {
+    margin: auto;
+    text-align: left;
+    padding-left: 2rem;
+    font-size: 0.9rem;
+
+    @media only screen and (min-width: 800px) {
+        width: 35%;
+        float: left;
+        padding-left: 1rem;    
+    }
+
+    h3 {
+        margin: 1rem 0 0.5rem;
+    }
+
+    p {
+        padding: 0;
+    }
+}
+
+section {
+    text-align: left;
+    padding-left: 2rem;
+
+    @media only screen and (min-width: 800px) {
+        margin-left: 35%;
+        padding-left: 0;
+    }
+    
+    h2 {
+        margin-bottom: 0.5rem;
+    }
+
+    
+    p {
+        padding: 0 0 1rem 0;
+    }
+}
 
 
 /* ==========================================================================
