@@ -1,0 +1,49 @@
+.nav {
+    margin: 2rem 0;
+
+    &-link {
+        display: inline-block;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        border-radius: 3px;
+        background: $green;
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem;
+
+        &:visited {
+            color: white;
+        }
+
+        &:hover {
+            background: lighten($green, 5%);
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.top-nav {
+    background: rgba($white, 0.85);
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+    a {
+        display: inline-block;
+        margin: 0 1rem;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .about & {
+        background: $green;
+
+        a,
+        a:visited {
+            color: $white;
+        }
+    }
+}

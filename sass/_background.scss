@@ -6,7 +6,7 @@ $backgrounds: 28;
 }
 
 @for $i from 1 through $backgrounds {
-    .body-#{$i} {
+    .body-#{$i} .background {
         background-image: url('/img/backgrounds/mobile/bg-#{$i}.jpg');
 
         @media (min-width: 800px) {
