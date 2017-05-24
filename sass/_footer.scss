@@ -1,0 +1,20 @@
+.footer {
+    background: rgba($green, 0.3);
+
+    p {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    a {
+        color: white;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    .about & {
+        background: $green;
+    }
+}

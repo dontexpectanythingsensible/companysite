@@ -1,5 +1,12 @@
 .project {
     display: flex;
+    margin: auto;
+    max-width: 800px;
+}
+
+.project__img {
+    height: 200px;
+    width: 200px;
 }
 
 .project__description {

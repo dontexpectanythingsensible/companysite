@@ -4,6 +4,7 @@
   "description": "Company website for Don't Expect Anything Sensible",
   "main": "index.html",
   "scripts": {
+    "start": "grunt",
     "test": "mocha"
   },
   "repository": {

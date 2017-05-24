@@ -53,62 +53,6 @@ textarea {
     box-sizing: border-box;
 }
 
-.header {
-    padding: 2rem 0;
-    background: rgba($white, 1);
-}
-
-.logo {
-    width: 30%;
-}
-
-.title {
-    color: $pink;
-    font-size: 2.2rem;
-    font-family: 'Slabo', 'Arial Narrow', Arial, Helvetica, sans-serif;
-    text-transform: lowercase;
-    margin: auto;
-    font-weight: normal;
-    line-height: 1;
-
-    @media (min-width: 768px) {
-        font-size: 4.5rem;
-    }
-}
-
-
-.footer {
-    background: rgba($green, 0.3);
-
-    p {
-        max-width: 700px;
-        margin: auto;
-    }
-
-    a {
-        color: white;
-
-        &:hover {
-            color: white;
-        }
-    }
-
-    .about & {
-    //     margin-top: 2rem;
-        background: $green;
-    //     color: $green;
-
-    //     a,
-    //     a:visited {
-    //         color: $green;
-    //     }
-    }
-}
-
-.tagline {
-    background: rgba($green, 0.3);
-}
-
 img {
     max-width: 100%;
 }
