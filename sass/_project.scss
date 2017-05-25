@@ -1,13 +1,38 @@
+.project__container {
+    background: $white;
+    color: $black;
+    padding-top: 2rem;
+}
+
 .project {
     display: flex;
-    margin: auto;
+    margin: 1.5rem auto;
     max-width: 800px;
+
+    p {
+        padding: 1rem 0;
+    }
 }
 
 .project__img {
     height: 200px;
     width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .project__description {
+    padding-left: 1rem;
+}
+
+.project__description,
+.project__title {
+    text-align: left;
+}
+
+.project__link {
+    display: block;
+    margin-bottom: 0.5rem;
 }
