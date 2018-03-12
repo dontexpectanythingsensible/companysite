@@ -1,5 +1,5 @@
 .footer {
-    background: rgba($green, 0.3);
+    background: $green;
 
     p {
         max-width: 700px;
@@ -7,10 +7,10 @@
     }
 
     a {
-        color: white;
+        color: $white;
 
         &:hover {
-            color: white;
+            color: $pink;
         }
     }
 

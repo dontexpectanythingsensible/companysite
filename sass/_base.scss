@@ -69,16 +69,30 @@ a {
     &:visited {
         color: darken($green, 5%);
     }
+
+    &:hover {
+        color: $pink;
+    }
 }
 
 .game-link {
     margin-bottom: 2rem;
+    display: block;
+    text-decoration: none;
 
-    img {
-        margin: 1rem auto;
+    &:hover {
+        text-decoration: none;
+    }
+
+    .nav-link {
         display: block;
-        border: 1px solid $white;
-        opacity: 0.9;
+        text-decoration: none;
+        margin: 0 auto 1rem;
+
+    }
+
+    iframe {
+        max-width: 100%;
     }
 }
 
@@ -108,12 +122,16 @@ a {
 }
 
 .button {
-    background: $green;
+    background: $pink;
     color: $white;
     border-radius: 0 3px 3px 0;
     border: none;
     margin-bottom: 1rem;
     padding: 0.5rem;
+
+    &:hover {
+        background: lighten($pink, 10%);
+    }
 }
 
 .about {

@@ -3,9 +3,15 @@
     background: rgba($white, 1);
 }
 
+.background {
+    background: $green;
+    padding-bottom: 2rem;
+}
+
 .logo {
-    width: 30%;
-    max-width: 500px;
+    float: left;
+    max-height: 100px;
+    margin-right: 20px;
 }
 
 .title {
@@ -17,11 +23,21 @@
     font-weight: normal;
     line-height: 1;
 
-    @media (min-width: 768px) {
-        font-size: 4.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @media (max-width: 400px) {
+        flex-direction: column;
     }
+
+    @media (min-width: 401px) {
+        width: 500px;
+        height: 100px;
+    }
+
 }
 
-.tagline {
-    background: rgba($green, 0.3);
-}
+// .tagline {
+//     background: $green;
+// }
