@@ -21,6 +21,12 @@ $black: #111;
     padding-bottom: 1rem;
 }
 
+// mailchimp hidden
+.mc-hidden {
+    position: absolute;
+    left: -5000px;
+}
+
 @import "base";
 // @import "background";
 @import "header";
