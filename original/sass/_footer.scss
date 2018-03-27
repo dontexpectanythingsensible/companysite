@@ -1,0 +1,20 @@
+.footer {
+    background: $green;
+
+    p {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    a {
+        color: $white;
+
+        &:hover {
+            color: $pink;
+        }
+    }
+
+    .about & {
+        background: $green;
+    }
+}

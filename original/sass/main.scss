@@ -1,0 +1,36 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+$red: rgb(245, 86, 99);
+$pink: #f92672;
+$white: #fffff5;
+$green: #75B54E;
+$black: #111;
+
+@import "font";
+
+.body {
+    color: white;
+    text-align: center;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: $green;
+}
+
+.main {
+    background: $white;
+    padding-bottom: 1rem;
+}
+
+// mailchimp hidden
+.mc-hidden {
+    position: absolute;
+    left: -5000px;
+}
+
+@import "base";
+// @import "background";
+@import "header";
+@import "footer";
+@import "nav";
+@import "project";
+@import "print";

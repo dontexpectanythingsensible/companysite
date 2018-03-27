@@ -1,0 +1,48 @@
+.nav {
+    margin: 2rem 0;
+
+    &-link {
+        display: inline-block;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        border-radius: 3px;
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem;
+
+        &:visited {
+            color: white;
+        }
+    }
+}
+
+
+.top-nav {
+    background: $white;
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+    a {
+        display: block;
+        margin: 0.5rem auto;
+
+        @media (min-width: 401px) {
+            display: inline-block;
+            margin: 0 1rem;
+        }
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .about & {
+        background: $green;
+
+        a,
+        a:visited {
+            color: $white;
+        }
+    }
+}
