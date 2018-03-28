@@ -2,7 +2,7 @@
 title = "Home"
 description = "Hello"
 date = 2018-03-24
-template = "index.html"
+template = "home.html"
 +++
 
 <div class="project__container">
