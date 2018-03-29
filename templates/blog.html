@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <div class="blog-post">
+        <h1>{{ page.title }}</h1>
+        {{ page.date }} {{ page.reading_time }}
+        <article>{{ page.content | safe }}</article>
+        }
+    </div>
+{% endblock content %}

@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+{% block content %}
+    <ul class="posts__list">
+    {% for page in section.pages %}
+        <li>
+            <article class="posts__post">
+                <a href="{{ page.slug }}" class="posts__post__link">
+                    <h1 class="posts__post__title">{{ page.title }}</h1>
+                    {{ page.date | date(format="%d/%m") }}
+                    {% if page.image %}<img class="posts__post__image" src="{{ page.image }}" />{% endif %}
+                    <p class="posts__post__description">{{ page.description }}</p>
+                </a>
+            </article>
+        </li>
+    {% endfor %}
+    </section>
+{% endblock content %}

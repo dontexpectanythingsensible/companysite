@@ -2,13 +2,13 @@ $red: rgb(245, 86, 99);
 $pink: #f92672;
 $white: #fffff5;
 $green: #75B54E;
-$black: #111;
+$black: #222;
 
 @import "font";
 
 .body {
-    color: white;
-    text-align: center;
+    color: $black;
+    text-align: left;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     margin: 0;
     background-color: $green;
@@ -30,4 +30,6 @@ $black: #111;
 @import "footer";
 @import "nav";
 @import "project";
+@import "blog";
+
 @import "print";
