@@ -67,7 +67,7 @@ module.exports = function(grunt) {
                 ]
             },
             dist: {
-                src: 'css/*.css'
+                src: 'public/*.css'
             }
         },
 
@@ -77,7 +77,7 @@ module.exports = function(grunt) {
             },
             build: {
                 files: {
-                    'main.css': ['public/main.css'],
+                    'public/main.css': ['public/main.css'],
                     'public/index.html': ['public/index.html'],
                     'public/about/index.html': ['public/about/index.html'],
                 }
