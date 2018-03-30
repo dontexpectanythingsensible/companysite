@@ -1,6 +1,8 @@
 .header {
     padding: 2rem 0;
     background: rgba($white, 1);
+    text-align: center;
+    color: $white;
 }
 
 .background {
@@ -37,6 +39,7 @@
 
 }
 
-// .tagline {
-//     background: $green;
-// }
+.tagline {
+    text-align: center;
+    color: $white;
+}
