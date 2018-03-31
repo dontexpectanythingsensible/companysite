@@ -32,10 +32,26 @@
     h2 {
         margin: 0;
     }
+
+    &:hover {
+        h2 {
+            color: $pink;
+        }
+    }
 }
 .project__toggle .active {
     color: $white;
     background: $pink;
+
+    h2 {
+        color: $white;
+    }
+
+    &:hover {
+        h2 {
+            color: $white;
+        }
+    }
 }
 
 .project__img {

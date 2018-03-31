@@ -20,7 +20,7 @@
 .top-nav {
     background: $white;
     padding: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     text-align: center;
     color: $white;
 
@@ -30,7 +30,7 @@
 
         @media (min-width: 401px) {
             display: inline-block;
-            margin: 0 1rem;
+            margin: 0 1rem 0.5rem;
         }
         text-decoration: none;
 

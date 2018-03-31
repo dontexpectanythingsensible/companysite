@@ -1,17 +1,21 @@
 {% extends "index.html" %}
+{% block bodyclass %}blog{% endblock bodyclass %}
+
 {% block content %}
     <ul class="posts__list">
     {% for page in section.pages %}
+    {% if not page.draft %}
         <li>
             <article class="posts__post">
                 <a href="{{ page.slug }}" class="posts__post__link">
                     <h1 class="posts__post__title">{{ page.title }}</h1>
-                    {{ page.date | date(format="%d/%m") }}
+                    {{ page.date | date(format="%d %B") }}
                     {% if page.image %}<img class="posts__post__image" src="{{ page.image }}" />{% endif %}
                     <p class="posts__post__description">{{ page.description }}</p>
                 </a>
             </article>
         </li>
+    {% endif %}
     {% endfor %}
     </section>
 {% endblock content %}
