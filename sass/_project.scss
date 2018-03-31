@@ -6,7 +6,7 @@
 .project {
     display: flex;
     margin: 1.5rem auto;
-    max-width: 800px;
+    max-width: 650px;
 
     @media (max-width: 400px) {
         flex-direction: column;
