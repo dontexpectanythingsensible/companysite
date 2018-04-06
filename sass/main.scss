@@ -32,6 +32,10 @@ $black: #444;
     left: -5000px;
 }
 
+strong {
+    font-weight: bold;
+}
+
 @import "base";
 @import "header";
 @import "footer";
