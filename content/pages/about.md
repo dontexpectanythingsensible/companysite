@@ -7,6 +7,9 @@ template = "about.html"
 +++
 
 <article>
+    <p>Hello, I'm James, and I am the one person in this one-person company, Don't Expect Anything Sensible. I like making games, and other (slightly-)related software, and this site is where you can find out all about what I'm up to.</p>
+    <p>If you'd like to keep up-to-date or find out when my games are on sale, you can sign up to my mailing list below.</p>
+    
 <aside>
 <h2>Factsheet</h2>
 <h3>Developer</h3>

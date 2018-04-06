@@ -5,6 +5,10 @@ date = 2018-03-24
 template = "home.html"
 +++
 
+<p>Hello! This is <strong>Don't Expect Anything Sensible</strong>, a games development company. It contains one person, <strong>James Baum</strong>, who has many other claims on his time; have a look at games we've made or other things we've done below.</p>
+
+<p>If you're interested in how we make games, have a look at the news section which contains development logs and other goings-on, or sign up for our mailing list using the form in the footer. You can get in touch by emailing <a href="mailto:james@dontexpectanythingsensible.uk" title="Email me!">james@dontexpectanythingsensbile.uk</a> or <a href="http://twitter.com/reallysensible">follow us on Twitter</a>.</p>
+
 <div class="project__container">
 <nav class="project__toggle">
 <a href="#" id="games" class="active"><h2>Games</h2></a>
