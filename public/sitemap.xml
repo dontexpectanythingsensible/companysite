@@ -1,13 +1,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
-            <loc>https://www.dontexpectanythingsensible.uk/about/</loc>
-            
-                <lastmod>2018-03-24</lastmod>
-            
-        </url>
-    
-        <url>
             <loc>https://www.dontexpectanythingsensible.uk/news/runny-block-released/</loc>
             
                 <lastmod>2018-03-13</lastmod>
@@ -21,13 +14,20 @@
             
         </url>
     
-    
         <url>
-            <loc>https://www.dontexpectanythingsensible.uk/</loc>
+            <loc>https://www.dontexpectanythingsensible.uk/about/</loc>
+            
+                <lastmod>2018-03-24</lastmod>
+            
         </url>
+    
     
         <url>
             <loc>https://www.dontexpectanythingsensible.uk/news/</loc>
+        </url>
+    
+        <url>
+            <loc>https://www.dontexpectanythingsensible.uk/</loc>
         </url>
     
     
